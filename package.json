@@ -13,9 +13,9 @@
     "url": "git+https://github.com/brijeshbhakta30/eslint-config-blaze.git"
   },
   "engines": {
-    "npm": "please-use-yarn",
+    "yarn": "please-use-npm",
     "node": ">= 14.18.0",
-    "yarn": ">= 1.19.1"
+    "npm": ">= 6.14.14"
   },
   "keywords": [
     "airbnb",
