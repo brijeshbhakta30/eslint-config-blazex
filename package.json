@@ -1,20 +1,70 @@
 {
-  "name": "eslint-config-blaze",
+  "name": "eslint-config-blazex",
   "version": "0.0.1",
-  "description": "🔥 Blaze 🔥 eslint config that can be used across projects",
+  "description": "🔥 Blazex 🔥 eslint config that can be used across projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brijeshbhakta30/eslint-config-blaze.git"
+    "url": "git+https://github.com/brijeshbhakta30/eslint-config-blazex.git"
   },
-  "keywords": [],
-  "author": "",
+  "engines": {
+    "yarn": "please-use-npm",
+    "node": ">= 14.18.0",
+    "npm": ">= 6.14.14"
+  },
+  "keywords": [
+    "airbnb",
+    "code",
+    "config",
+    "ecmascript",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
+    "eslint",
+    "javascript",
+    "lint",
+    "quality",
+    "react",
+    "react-hooks",
+    "styleguide",
+    "typescript"
+  ],
+  "author": "Brijesh Bhakta <brijeshbhakta30@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brijeshbhakta30/eslint-config-blaze/issues"
+    "url": "https://github.com/brijeshbhakta30/eslint-config-blazex/issues"
   },
-  "homepage": "https://github.com/brijeshbhakta30/eslint-config-blaze#readme"
+  "homepage": "https://github.com/brijeshbhakta30/eslint-config-blazex#readme",
+  "peerDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "eslint-plugin-unicorn": "^44.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "devmoji": "^2.3.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "husky": "^8.0.1"
+  }
 }
