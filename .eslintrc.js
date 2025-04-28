@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'airbnb-base',
     'eslint:recommended',
-    'plugin:sonarjs/recommended',
+    'plugin:sonarjs/recommended-legacy',
   ],
   parserOptions: {
     ecmaVersion: 2018,
