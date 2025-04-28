@@ -2,7 +2,7 @@ const eslintConfig = require('./.eslintrc');
 
 module.exports = {
   extends: [
-    eslintConfig.extends,
+    ...eslintConfig.extends,
     'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
   ],

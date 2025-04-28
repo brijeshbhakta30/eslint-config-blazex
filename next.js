@@ -3,7 +3,7 @@ module.exports = {
     'airbnb',
     'plugin:unicorn/recommended',
     'eslint:recommended',
-    'plugin:sonarjs/recommended',
+    'plugin:sonarjs/recommended-legacy',
   ],
   parserOptions: {
     ecmaVersion: 2018,
