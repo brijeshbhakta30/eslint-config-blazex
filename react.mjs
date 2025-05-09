@@ -1,3 +1,4 @@
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
@@ -19,6 +20,7 @@ export default {
     ...javascript.plugins,
     react: reactPlugin,
     'react-hooks': reactHooks,
+    'jsx-a11y': jsxA11y,
   },
   rules: {
     ...reactRules,
