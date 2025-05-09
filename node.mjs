@@ -6,7 +6,7 @@ import nodeRules from './rules/node.mjs';
 export default {
   ...javascript,
   plugins: {
-    ...plugins,
+    ...javascript.plugins,
     n: nodePlugin,
   },
   rules: {

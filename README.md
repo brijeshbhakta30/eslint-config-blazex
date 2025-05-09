@@ -1,6 +1,6 @@
 # eslint-config-blazex
 
-This package provides a set of extensible shared ESLint configurations using the new Flat Config format introduced in ESLint. It supports JavaScript, TypeScript, React, and Next.js projects.
+This package provides a set of extensible shared ESLint configurations using the new Flat Config format introduced in ESLint. It supports JavaScript, TypeScript, React, Next.js, and Node.js projects.
 
 ## Installation
 
@@ -68,8 +68,7 @@ To use the React configuration for TypeScript:
 import { configs } from 'eslint-config-blazex';
 
 export default [
-  configs.react,
-  configs.typescript, // Include TypeScript rules if using TypeScript
+  configs.reactTypescript,
 ];
 ```
 
@@ -100,6 +99,32 @@ export default [
 ];
 ```
 
+### Node.js Config (JavaScript)
+
+To use the Node.js configuration for JavaScript:
+
+```javascript
+// eslint.config.mjs
+import { configs } from 'eslint-config-blazex';
+
+export default [
+  configs.node,
+];
+```
+
+### Node.js Config (TypeScript)
+
+To use the Node.js configuration for TypeScript:
+
+```javascript
+// eslint.config.mjs
+import { configs } from 'eslint-config-blazex';
+
+export default [
+  configs.nodeTypescript,
+];
+```
+
 ## Customizing Rules
 
 If you want to customize or override specific rules, you can extend the configuration like this:
@@ -124,9 +149,11 @@ export default [
 - **JavaScript**: `configs.javascript`
 - **TypeScript**: `configs.typescript`
 - **React (JavaScript)**: `configs.react`
-- **React (TypeScript)**: Combine `configs.react` and `configs.typescript`
+- **React (TypeScript)**: `configs.reactTypescript`
 - **Next.js (JavaScript)**: `configs.next`
 - **Next.js (TypeScript)**: Combine `configs.next` and `configs.typescript`
+- **Node.js (JavaScript)**: `configs.node`
+- **Node.js (TypeScript)**: `configs.nodeTypescript`
 
 ## Exported Rules
 
@@ -137,11 +164,28 @@ import { rules } from 'eslint-config-blazex';
 
 console.log(rules.javascript); // Logs JavaScript-specific rules
 console.log(rules.typescript); // Logs TypeScript-specific rules
+console.log(rules.react); // Logs React-specific rules
+console.log(rules.node); // Logs Node.js-specific rules
 ```
+
+## Summary of Packages Used
+
+This configuration leverages the following ESLint plugins and packages:
+
+- **Core ESLint**: Provides the base linting functionality.
+- **`eslint-plugin-react`**: Adds linting rules for React projects.
+- **`eslint-plugin-next`**: Adds linting rules for Next.js projects.
+- **`eslint-plugin-node`**: Adds linting rules for Node.js projects.
+- **`eslint-plugin-unicorn`**: Enforces better practices and modern JavaScript features.
+- **`eslint-plugin-sonarjs`**: Detects bugs and code smells.
+- **`eslint-plugin-perfectionist`**: Helps enforce consistent code structure and ordering.
+- **`@typescript-eslint/eslint-plugin`**: Provides TypeScript-specific linting rules.
+- **`@typescript-eslint/parser`**: Parses TypeScript code for ESLint.
+- **`globals`**: Provides a list of global variables for different environments.
 
 ## Notes
 
 - This package is designed to work with ESLint's Flat Config format. Ensure you are using a compatible version of ESLint.
-- For Next.js and React configurations, make sure you have the necessary plugins installed (e.g., `eslint-plugin-react`, `eslint-plugin-next`).
+- For Next.js, React, and Node.js configurations, make sure you have the necessary plugins installed (e.g., `eslint-plugin-react`, `eslint-plugin-next`, `eslint-plugin-node`).
 
 For more details, refer to the [ESLint Flat Config documentation](https://eslint.org/docs/latest/use/configure/configuration-files-new).
