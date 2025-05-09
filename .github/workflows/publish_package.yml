@@ -1,0 +1,46 @@
+name: Publish Package to NPM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish_package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Setup github user
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+      - name: Increment version and set env variables
+        id: version
+        run: |
+          PATCH_VERSION=$(jq -r '.version' package.json | awk -F'.' '{print $3}')
+          MINOR_VERSION=$(jq -r '.version' package.json | awk -F'.' '{print $2}')
+          if [ $MINOR_VERSION -ge 99 ]; then
+            npm version major
+          elif [ $PATCH_VERSION -ge 99 ]; then
+            npm version minor
+          else
+            npm version patch
+          fi
+          echo "CURRENT_VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
+          echo "NPM_PACKAGE_NAME=$(jq -r .name package.json)" >> $GITHUB_ENV
+
+      - name: Publish to NPM
+        id: publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Push version changes
+        if: steps.publish.outcome == 'success'
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
