@@ -1,4 +1,3 @@
-import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 import javascript from './javascript.mjs';
