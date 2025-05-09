@@ -1,12 +1,12 @@
 {
   "name": "eslint-config-blazex",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "🔥 Blazex 🔥 eslint config that can be used across projects",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install || true"
   },
   "repository": {
     "type": "git",
@@ -14,25 +14,38 @@
   },
   "engines": {
     "yarn": "please-use-npm",
-    "node": ">= 14.18.0",
-    "npm": ">= 6.14.14"
+    "node": ">= 18.18.0",
+    "npm": ">= 10.0.0"
   },
   "keywords": [
-    "airbnb",
     "code",
     "config",
     "ecmascript",
+    "es5",
+    "es2009",
+    "es6",
     "es2015",
     "es2016",
     "es2017",
     "es2018",
+    "es2019",
+    "es2020",
+    "es2021",
+    "es2022",
+    "es2023",
+    "es2024",
     "eslint",
     "javascript",
     "lint",
     "quality",
+    "next",
+    "xo",
+    "sonarjs",
+    "perfectionist",
     "react",
     "react-hooks",
     "styleguide",
+    "unicorn",
     "typescript"
   ],
   "author": "Brijesh Bhakta <brijeshbhakta30@gmail.com>",
@@ -42,29 +55,37 @@
   },
   "homepage": "https://github.com/brijeshbhakta30/eslint-config-blazex#readme",
   "peerDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint": "^9.26.0",
+    "eslint-config-xo": "^0.47.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*",
-    "eslint-plugin-react-hooks": "*",
+    "eslint-plugin-perfectionist": "^4.12.3",
+    "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-sonarjs": "^3.0.2",
-    "eslint-plugin-unicorn": "^56.0.0"
+    "eslint-plugin-unicorn": "^59.0.1",
+    "globals": "^16.1.0"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "typescript-eslint": "^8.32.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "devmoji": "^2.3.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint": "^9.26.0",
+    "eslint-config-xo": "^0.47.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*",
-    "eslint-plugin-react-hooks": "*",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^4.12.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-sonarjs": "^3.0.2",
-    "eslint-plugin-unicorn": "^56.0.0",
-    "husky": "^8.0.1"
+    "eslint-plugin-unicorn": "^59.0.1",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "typescript-eslint": "^8.32.0"
   }
 }

@@ -1,0 +1,11 @@
+# Dont publish github files
+.github
+
+# Dont publish scripts
+scripts
+
+# Dont publish tools and dependencies
+node_modules
+.husky
+.nvmrc
+commitlint.config.js
