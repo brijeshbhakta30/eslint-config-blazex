@@ -1,8 +1,12 @@
 import react from './react.mjs';
-import typescript from './typescript.mjs';
+import typescript, { typescriptLanguageOptions } from './typescript.mjs';
 
 export default {
   ...react,
+  languageOptions: {
+    ...react.languageOptions,
+    ...typescriptLanguageOptions,
+  },
   plugins: {
     ...react.plugins,
     ...typescript.plugins,

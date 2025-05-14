@@ -2,7 +2,7 @@ import node from './node.mjs';
 import typescript from './typescript.mjs';
 
 export default {
-  ...node,
+  ...typescript,
   plugins: {
     ...node.plugins,
     ...typescript.plugins,

@@ -87,6 +87,6 @@
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.1.0",
     "husky": "^9.1.7",
-    "typescript-eslint": "^8.32.0"
+    "typescript-eslint": "^8.32.1"
   }
 }
