@@ -1,5 +1,4 @@
 import javascriptConfig from './javascript.mjs';
-import nextConfig from './next.mjs';
 import nodeConfig from './node.mjs';
 import nodeTypescriptConfig from './nodeTypescript.mjs';
 import reactConfig from './react.mjs';
@@ -8,7 +7,6 @@ import typescriptConfig from './typescript.mjs';
 
 export const configs = {
   javascript: javascriptConfig,
-  next: nextConfig,
   node: nodeConfig,
   nodeTypescript: nodeTypescriptConfig,
   react: reactConfig,
@@ -18,7 +16,6 @@ export const configs = {
 
 export const rules = {
   javascript: javascriptConfig.rules,
-  next: nextConfig.rules,
   node: nodeConfig.rules,
   nodeTypescript: nodeTypescriptConfig.rules,
   react: reactConfig.rules,

@@ -14,7 +14,7 @@ export default {
       ecmaVersion: 'latest',
     },
   },
-  files: ['**/*.ts', '**/*.mts', '**/*.tsx'],
+  files: ['**/*.ts', '**/*.cts', '**/*.mts'],
   plugins: {
     ...plugins,
     '@typescript-eslint': tseslint.plugin,
