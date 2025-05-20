@@ -8,7 +8,7 @@ export default {
   ...importPlugin.flatConfigs.typescript.rules,
   ...promise.configs['flat/recommended'].rules,
   '@stylistic/block-spacing': ['error', 'always'],
-  '@stylistic/function-paren-newline': ['error', 'multiline'],
+  '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
   '@stylistic/indent': 0,
   '@stylistic/no-mixed-spaces-and-tabs': 0,
   '@stylistic/object-curly-spacing': ['error', 'always'],
