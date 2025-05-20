@@ -20,7 +20,7 @@ export default {
     ...javascript.languageOptions,
     ...typescriptLanguageOptions,
   },
-  files: ['**/*.ts', '**/*.cts', '**/*.mts'],
+  files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
   plugins: {
     ...plugins,
     '@typescript-eslint': tseslint.plugin,

@@ -22,11 +22,16 @@ export default {
       },
     },
   },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   linterOptions: {
     reportUnusedDisableDirectives: 'error',
     reportUnusedInlineConfigs: 'error',
   },
-  files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
+  files: ['**/*.{js,mjs,cjs,jsx,mjsx}'],
   plugins,
   rules: {
     ...perfectionistRules,

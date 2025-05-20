@@ -56,6 +56,7 @@
   "peerDependencies": {
     "eslint": "^9.26.0",
     "eslint-config-xo": "^0.47.0",
+    "eslint-import-resolver-typescript": "^4.3.5",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-perfectionist": "^4.12.3",
     "eslint-plugin-promise": "^7.2.1",

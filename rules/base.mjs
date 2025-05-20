@@ -4,6 +4,7 @@ import promise from 'eslint-plugin-promise';
 
 export default {
   ...xo[0].rules,
+  ...importPlugin.flatConfigs.recommended.rules,
   ...importPlugin.flatConfigs.typescript.rules,
   ...promise.configs['flat/recommended'].rules,
   '@stylistic/block-spacing': ['error', 'always'],

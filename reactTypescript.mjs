@@ -11,7 +11,7 @@ export default {
     ...react.plugins,
     ...typescript.plugins,
   },
-  files: [...react.files, ...typescript.files],
+  files: typescript.files,
   rules: {
     ...react.rules,
     ...typescript.rules,

@@ -26,6 +26,5 @@ export default {
     ...reactRules,
     ...javascript.rules,
   },
-  files: [...javascript.files, '**/*.jsx'],
 };
 
