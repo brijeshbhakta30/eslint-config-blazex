@@ -7,7 +7,6 @@ export default {
     },
   ],
   '@typescript-eslint/no-explicit-any': 'warn',
-  '@typescript-eslint/return-await': 0,
   '@typescript-eslint/no-unused-vars': [
     'error',
     {
@@ -20,4 +19,5 @@ export default {
     'error',
     { functions: false },
   ],
+  '@typescript-eslint/return-await': 0,
 };

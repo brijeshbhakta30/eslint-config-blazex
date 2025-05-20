@@ -2,7 +2,6 @@ import unicorn from 'eslint-plugin-unicorn';
 
 export default {
   ...unicorn.configs.recommended.rules,
-  'unicorn/prefer-node-protocol': 'error',
   'unicorn/filename-case': [
     'error',
     {
@@ -11,5 +10,10 @@ export default {
         pascalCase: true,
       },
     },
+  ],
+  'unicorn/prefer-node-protocol': 'error',
+  'unicorn/switch-case-braces': [
+    'error',
+    'avoid',
   ],
 };
