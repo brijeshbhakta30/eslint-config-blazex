@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-blazex",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "🔥 Blazex 🔥 eslint config that can be used across projects",
   "main": "index.mjs",
   "scripts": {

@@ -53,4 +53,12 @@ export default {
   'max-params': ['error', 5],
   'no-console': 'error',
   'no-param-reassign': 'error',
+  'no-unused-vars': ['error', {
+    argsIgnorePattern: '^_',
+    varsIgnorePattern: '^_',
+    caughtErrorsIgnorePattern: '^_',
+  }],
+  'capitalized-comments': ['error', 'always', {
+    ignorePattern: String.raw`^(?:\s*(?:const|let|var|function|import|export|type|interface|if|for|while|switch|return|throw|class)\b|\s*[\w$.]+\s*(?:=|=>|\()|\s*[\{\};])`,
+  }],
 };

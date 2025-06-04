@@ -12,6 +12,27 @@ export default {
     },
   ],
   'unicorn/prefer-node-protocol': 'error',
+  'unicorn/prevent-abbreviations': [
+    'error',
+    {
+      allowList: {
+        acc: true,
+        args: true,
+        arg: true,
+        props: true,
+        prop: true,
+        req: true,
+        res: true,
+        getInitialProps: true,
+        getServerSideProps: true,
+        getStaticProps: true,
+        getStaticPaths: true,
+        err: true,
+        obj: true,
+        db: true,
+      },
+    },
+  ],
   'unicorn/switch-case-braces': [
     'error',
     'avoid',
