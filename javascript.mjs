@@ -2,6 +2,7 @@ import globals from 'globals';
 
 import plugins from './plugins.mjs';
 import baseRules from './rules/base.mjs';
+import jestRules from './rules/jest.mjs';
 import perfectionistRules from './rules/perfectionist.mjs';
 import sonarRules from './rules/sonar.mjs';
 import unicornRules from './rules/unicorn.mjs';
@@ -13,6 +14,7 @@ export default {
       ...globals.nodeBuiltin,
       ...globals.node,
       ...globals.commonjs,
+      ...globals.jest,
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -37,6 +39,7 @@ export default {
     ...perfectionistRules,
     ...sonarRules,
     ...unicornRules,
+    ...jestRules,
     // Putting this last to override the default rules
     ...baseRules,
   },
