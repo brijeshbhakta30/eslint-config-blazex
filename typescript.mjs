@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
 
 import javascript from './javascript.mjs';

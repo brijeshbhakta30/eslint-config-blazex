@@ -59,6 +59,6 @@ export default {
     caughtErrorsIgnorePattern: '^_',
   }],
   'capitalized-comments': ['error', 'always', {
-    ignorePattern: String.raw`^(?:\s*(?:const|let|var|function|import|export|type|interface|if|for|while|switch|return|throw|class)\b|\s*[\w$.]+\s*(?:=|=>|\()|\s*[\{\};])`,
+    ignorePattern: String.raw`^(?:\s*(?:const|let|var|function|import|export|type|interface|if|for|while|switch|return|throw|class)\b|\s*[\w$.]+\s*(?:=|=>|\()|\s*[\{\};]|\s*\w+:\s*)`,
   }],
 };
