@@ -59,6 +59,7 @@ export default {
     caughtErrorsIgnorePattern: '^_',
   }],
   'capitalized-comments': ['error', 'always', {
-    ignorePattern: String.raw`^(?:\s*(?:const|let|var|function|import|export|type|interface|if|for|while|switch|return|throw|class)\b|\s*[\w$.]+\s*(?:=|=>|\()|\s*[\{\};]|\s*\w+:\s*)`,
+    // eslint-disable-next-line @stylistic/max-len
+    ignorePattern: String.raw`(?:const|let|var|function|import|export|type|interface|if|for|while|switch|return|throw|class|await|async|try)\b|[\w$.]+\s*(?:=|=>|\()|[\{\};]|[\w$]+,\s*$|(?!TODO:|FIXME:)\w+:\s*|\w+\s*\{|[\w-]+\s*:\s*[^;]+;|[\w$.]+(?:\s+as\s+\w+)?\s*,?\s*$|[\w$]+\??:\s*[\w$\[\]<>| &]+;`,
   }],
 };
