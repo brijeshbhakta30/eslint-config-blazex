@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "prepare": "husky install || true"
+    "prepare": "husky || true"
   },
   "repository": {
     "type": "git",
@@ -56,9 +56,9 @@
   "peerDependencies": {
     "eslint": "^9.28.0",
     "eslint-config-xo": "^0.47.0",
-    "eslint-import-resolver-typescript": "^4.4.2",
+    "eslint-import-resolver-typescript": "^4.4.3",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jest": "^28.12.0",
+    "eslint-plugin-jest": "^28.13.3",
     "eslint-plugin-perfectionist": "^4.14.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-sonarjs": "^3.0.2",
@@ -70,7 +70,7 @@
     "eslint-plugin-n": "^17.19.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.34.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -79,7 +79,7 @@
     "eslint": "^9.28.0",
     "eslint-config-xo": "^0.47.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jest": "^28.12.0",
+    "eslint-plugin-jest": "^28.13.3",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-n": "^17.19.0",
     "eslint-plugin-perfectionist": "^4.14.0",
@@ -90,6 +90,6 @@
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.2.0",
     "husky": "^9.1.7",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.34.0"
   }
 }
