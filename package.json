@@ -54,42 +54,42 @@
   },
   "homepage": "https://github.com/brijeshbhakta30/eslint-config-blazex#readme",
   "peerDependencies": {
-    "eslint": "^9.28.0",
+    "eslint": "^9.29.0",
     "eslint-config-xo": "^0.47.0",
     "eslint-import-resolver-typescript": "^4.4.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.13.3",
     "eslint-plugin-perfectionist": "^4.14.0",
     "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-sonarjs": "^3.0.2",
+    "eslint-plugin-sonarjs": "^3.0.3",
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.2.0"
   },
   "optionalDependencies": {
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-n": "^17.19.0",
+    "eslint-plugin-n": "^17.20.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "typescript-eslint": "^8.34.0"
+    "typescript-eslint": "^8.34.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "devmoji": "^2.3.0",
-    "eslint": "^9.28.0",
+    "eslint": "^9.29.0",
     "eslint-config-xo": "^0.47.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jest": "^28.13.3",
+    "eslint-plugin-jest": "^28.14.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-n": "^17.19.0",
+    "eslint-plugin-n": "^17.20.0",
     "eslint-plugin-perfectionist": "^4.14.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-sonarjs": "^3.0.2",
+    "eslint-plugin-sonarjs": "^3.0.3",
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.2.0",
     "husky": "^9.1.7",
-    "typescript-eslint": "^8.34.0"
+    "typescript-eslint": "^8.34.1"
   }
 }
