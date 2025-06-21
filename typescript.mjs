@@ -17,6 +17,14 @@ export const typescriptLanguageOptions = {
 
 export default {
   ...javascript,
+  settings: {
+    'import/resolver': {
+      typescript: {},
+      node: {
+        extensions: ['.js', '.mjs', '.cjs', 'jsx', '.mjsx', '.ts', '.mts', '.tsx', '.mtsx'],
+      },
+    },
+  },
   languageOptions: {
     ...javascript.languageOptions,
     ...typescriptLanguageOptions,
