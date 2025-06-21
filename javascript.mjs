@@ -27,9 +27,6 @@ export default {
   settings: {
     'import/resolver': {
       typescript: {},
-      node: {
-        extensions: ['.js', '.mjs', '.cjs'],
-      },
     },
   },
   linterOptions: {
