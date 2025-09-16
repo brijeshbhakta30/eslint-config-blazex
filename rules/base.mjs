@@ -15,6 +15,7 @@ export default {
   '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
   '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
   'import/prefer-default-export': 0,
+  'import/no-cycle': 'error',
   indent: ['error', 2, {
     SwitchCase: 1,
     VariableDeclarator: 1,

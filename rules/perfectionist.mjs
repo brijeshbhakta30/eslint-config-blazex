@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import perfectionist from 'eslint-plugin-perfectionist';
 
 export default {
