@@ -3,6 +3,7 @@
   "version": "0.0.28",
   "description": "🔥 Blazex 🔥 eslint config that can be used across projects",
   "main": "index.mjs",
+  "types": "index.d.ts",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
