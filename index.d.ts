@@ -8,6 +8,8 @@ declare module 'eslint-config-blazex' {
 
   interface ConfigExports {
     javascript: ESLintConfig;
+    next: ESLintConfig;
+    nextTypescript: ESLintConfig;
     node: ESLintConfig;
     nodeTypescript: ESLintConfig;
     react: ESLintConfig;
@@ -17,6 +19,8 @@ declare module 'eslint-config-blazex' {
 
   interface RuleExports {
     javascript: Linter.RulesRecord;
+    next: Linter.RulesRecord;
+    nextTypescript: Linter.RulesRecord;
     node: Linter.RulesRecord;
     nodeTypescript: Linter.RulesRecord;
     react: Linter.RulesRecord;
