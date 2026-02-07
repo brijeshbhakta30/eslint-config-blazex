@@ -72,6 +72,32 @@ export default [
 ];
 ```
 
+### Next Config (JavaScript)
+
+To use the Next.js configuration:
+
+```javascript
+// eslint.config.mjs
+import { configs } from 'eslint-config-blazex';
+
+export default [
+  configs.next,
+];
+```
+
+### Next Config (TypeScript)
+
+To use the Next.js configuration for TypeScript:
+
+```javascript
+// eslint.config.mjs
+import { configs } from 'eslint-config-blazex';
+
+export default [
+  configs.nextTypescript,
+];
+```
+
 ### Node.js Config (JavaScript)
 
 To use the Node.js configuration for JavaScript:
@@ -123,6 +149,8 @@ export default [
 - **TypeScript**: `configs.typescript`
 - **React (JavaScript)**: `configs.react`
 - **React (TypeScript)**: `configs.reactTypescript`
+- **Next.js (JavaScript)**: `configs.next`
+- **Next.js (TypeScript)**: `configs.nextTypescript`
 - **Node.js (JavaScript)**: `configs.node`
 - **Node.js (TypeScript)**: `configs.nodeTypescript`
 
@@ -137,6 +165,8 @@ console.log(rules.javascript); // Logs JavaScript-specific rules
 console.log(rules.typescript); // Logs TypeScript-specific rules
 console.log(rules.react); // Logs React-specific rules
 console.log(rules.reactTypescript); // Logs React+TypeScript-specific rules
+console.log(rules.next); // Logs Next.js+React+Javascript-specific rules
+console.log(rules.nextTypescript); // Logs Next.js+React+TypeScript-specific rules
 console.log(rules.node); // Logs Node.js-specific rules
 console.log(rules.nodeTypescript); // Logs Node.js+TypeScript-specific rules
 ```
@@ -153,6 +183,7 @@ This configuration leverages the following ESLint plugins and packages:
 - **`eslint-plugin-perfectionist`**: Helps enforce consistent code structure and ordering.
 - **`@typescript-eslint/eslint-plugin`**: Provides TypeScript-specific linting rules.
 - **`@typescript-eslint/parser`**: Parses TypeScript code for ESLint.
+- **`@next/eslint-plugin-next`**: Provides Next.js-specific linting rules.
 - **`globals`**: Provides a list of global variables for different environments.
 
 ## Notes

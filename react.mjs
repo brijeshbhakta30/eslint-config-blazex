@@ -26,5 +26,10 @@ export default {
     ...reactRules,
     ...javascript.rules,
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
 
