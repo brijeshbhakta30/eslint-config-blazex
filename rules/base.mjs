@@ -13,6 +13,7 @@ export default {
   '@stylistic/indent-binary-ops': ['error', 2],
   '@stylistic/object-curly-spacing': ['error', 'always'],
   '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+  '@stylistic/operator-linebreak': ['error', 'before'],
   '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
   'import/prefer-default-export': 0,
   'import/no-cycle': 'error',
